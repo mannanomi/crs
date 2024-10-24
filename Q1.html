@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang=>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Background</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 130vh;
+        }
+        .container {
+            display: flex;
+            width: 100%;
+        }
+        .leftSide {
+            background-color: #0046ad;
+            color: white;
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 50px;
+        }
+        .leftSide .profile, .leftSide .history {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .leftSide .profile img, .leftSide .history img {
+            width: 50px;
+            height: 50px;
+        }
+        .rightSide {
+            width: 80%;
+            padding: 40px;
+        }
+        .rightSide h2 {
+            margin: 0 0 20px;
+            font-size: 1.5em;
+        }
+        .rightSide p {
+            margin: 5px 0;
+        }
+        .rightSide .year-of-study {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .rightSide .year-of-study input {
+            width: 30%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .rightSide input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .rightSide button {
+            width: 30%;
+            padding: 10px;
+            background-color: #1e30d1;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            margin-left: 30%;
+        }
+        .rightSide button:hover {
+            background-color: #555;
+        }
+        .rightSide .academic-background {
+            text-align: right;
+            display: block;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="leftSide">
+        </div>
+        <div class="rightSide">
+            <h2>Please Answer the following questions</h2>
+             <p>Academic Background</p>
+             <hr>
+            <form>
+                <p>1. Result</p>
+                <div class="year-of-study">
+                    <input type="text" name="Mathematics" placeholder="Mathematics">
+                    <input type="text" name="Science" placeholder="Science">
+                    <input type="text" name="English" placeholder="English">
+                    <input type="text" name="History and Geography" placeholder="History and Geography">
+                </div>
+                <p>2. What grade did you receive in your most recent study level?</p>
+                <input type="text" name="physics-grade">
+                <p>3. What is your Average Score?</p>
+                <input type="text" name="math-grade">
+                <p>4. Gender</p>
+                <input type="text" name="science-grade">
+                <p>5. Do you have any Part-Time Job?</p>
+                <input type="text" name="general-studies-grade">
+                <p>6. Extracurricular Activities?</p>
+                <input type="text" name="overall-grade">
+                <p>6. Atendance rate?</p>
+                <input type="text" name="overall-grade">
+                <p>6. Weekly Self-Study Hours</p>
+                <input type="text" name="overall-grade">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
